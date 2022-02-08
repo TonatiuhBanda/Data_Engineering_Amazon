@@ -1,0 +1,11 @@
+isbestseller,product_id,app_sale_price,app_sale_price_currency,isprime,evaluate_rate,country,app_sale_price_us
+False,B019HKBWGO,87.99,$,True,4.2 out of 5 stars,US,87.98999786376953
+False,B07TVDBFQM,10.45,$,True,4.5 out of 5 stars,US,10.449999809265137
+True,B0154ASID6,19.99,$,True,4.6 out of 5 stars,US,19.989999771118164
+True,B08TJZDJ4D,28.49,$,True,4.7 out of 5 stars,US,28.489999771118164
+True,B00MNV8E0C,14.99,$,True,4.7 out of 5 stars,US,14.989999771118164
+True,B082T62BCF,21.99,$,True,4.7 out of 5 stars,US,21.989999771118164
+True,B08J4QR18R,6.49,$,True,4.8 out of 5 stars,US,6.489999771118164
+True,B00YFTHJ9C,33.99,$,True,4.6 out of 5 stars,US,33.9900016784668
+True,B0725GYNG6,12.45,$,True,4.7 out of 5 stars,US,12.449999809265137
+True,B081TDCXGV,129.99,$,True,3.8 out of 5 stars,US,129.99000549316406

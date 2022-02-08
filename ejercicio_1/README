@@ -1,0 +1,39 @@
+Zophia Data Academy
+Fundamentos de ingeniería de datos
+
+Amazon Ejercicio 1
+
+Crear tabla products_standard_price con las siguientes columnas
+
+ |-- isbestseller: boolean
+ |-- product_id: string
+ |-- app_sale_price: float
+ |-- app_sale_price_currency: string
+ |-- isprime: boolean
+ |-- evaluate_rate: string
+ |-- country: string
+ |-- app_sale_price_us: double
+ 
+Ejemplo de la tabla de salida en sample/products_standard_price.csv
+
+Descripción
+ Amazon maneja distintas divisas dependiendo del país donde te encuentres,
+ por lo que sus precios no se encuentran estandarizados, por este motivo
+ surgió la necesidad de estandarizarlos a una única divisa USD.
+ 
+Archivos fuente
+ products.csv (información de los productos y su precio en divisa local)
+ tasas_cambio_pais_anual.csv (tasa de cambio a USD por año)
+ 
+Procedimiento
+ "source_to_stage"
+ Tomar el archivo fuente(csv) y enviarlo a la capa stage(parquet)
+ 
+ "transformation"
+ Leer la tabla products
+ Conservar sólo las columnas a utilizar
+ Cambiar el tipo de dato
+ Leer la tabla tasas_cambio_pais_anual
+ Conservar el país y el tipo de cambio del año más reciente
+ Crear la columna app_sale_price_us (precio local * tipo cambio)
+ Guardar la tabla en la capa curated(parquet)
