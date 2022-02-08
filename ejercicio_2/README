@@ -1,0 +1,30 @@
+Zophia Data Academy
+Fundamentos de ingeniería de datos
+
+Amazon Ejercicio 2
+
+Crear tabla products_avg_price con las siguientes columnas
+
+ |-- product_id: string
+ |-- country_count: int
+ |-- avg_price_us: double
+ 
+Ejemplo de la tabla de salida en output/products_avg_price.csv
+
+Descripción
+ En muchas ocasiones un mismo producto es vendido en distintos países,
+ y por diversas cuestiones de impuestos en los distintos países,
+ el precio para un mismo producto puede variar de país en país,
+ por lo que se busca tener el dato del precio promedio de cada producto
+ en una misma divisa. 
+ 
+Archivos fuente
+ products_standard_price.parquet (información de los productos)
+ 
+Procedimiento
+ "transformation"
+ Leer la tabla products_standard_price
+ Conservar sólo las columnas a utilizar
+ Agrupar los datos por product_id, contar el número de paises y promedio del precio en USD
+ Cambiar el tipo de dato
+ Guardar la tabla en la capa curated(parquet)
