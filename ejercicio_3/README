@@ -1,0 +1,37 @@
+Zophia Data Academy
+Fundamentos de ingeniería de datos
+
+Amazon Ejercicio 3
+
+Crear tabla products_price_ranges con las siguientes columnas
+
+ |-- product_id: string
+ |-- country_count: integer
+ |-- avg_price_us: double
+ |-- max_price_us: double
+ |-- max_country: string
+ |-- min_price_us: double
+ |-- min_country: string
+ 
+Ejemplo de la tabla de salida en output/products_price_ranges.csv
+
+Descripción
+ A pesar de tener el precio promedio sobre de cada producto, es difícil
+ saber entre qué rango de precios oscilan los productos en el catálogo
+ de Amazon Basics, por lo que se quiere agregar los límites superior e
+ inferior de los precios de cada producto, así como el dato del país
+ al que pertenecen dichos límites. 
+
+Archivos fuente
+ products_standard_price.parquet (información de los productos)
+ 
+Procedimiento
+ "transformation"
+ Leer la tabla products_standard_price
+ Conservar sólo las columnas a utilizar
+ Agrupar los datos por product_id, obtener el precio máximo y el país correspondiente
+ Agrupar los datos por product_id, obtener el precio mínimo y el país correspondiente
+ Agrupar los datos por product_id, contar el número de países y promedio del precio en USD
+ Cambiar el tipo de dato
+ Cruce de tablas para concentrar el promedio, máximo y mínimo
+ Guardar la tabla en la capa curated(parquet)
