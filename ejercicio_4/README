@@ -1,0 +1,33 @@
+Zophia Data Academy
+Fundamentos de ingeniería de datos
+
+Amazon Ejercicio 4
+
+Crear tabla products_price_ranges con las siguientes columnas
+
+ |-- product_id: string
+ |-- avg_evaluation_rate: double
+ |-- country_count: integer
+ 
+ 
+Ejemplo de la tabla de salida en output/product_rate_avg.csv
+
+Descripción
+ Para Amazon es importante conocer la opinión de sus clientes, por lo que
+ busca saber la calificación a nivel mundial que se tiene de cada uno de
+ sus productos en la categoría de productos Amazon basics, como ya sabemos,
+ hay productos que se pueden encontrar en más de un país, por lo que se
+ busca sacar el promedio del evaluation rate de cada producto para saber
+ su calificación global.
+
+Archivos fuente
+ products_standard_price.parquet (información de los productos)
+ 
+Procedimiento
+ "transformation"
+ Leer la tabla products_standard_price
+ Conservar sólo las columnas a utilizar
+ Extraer la calificación de evaluate_rate
+ Agrupar los datos por product_id, contar el número de países y promedio de la calificación
+ Cambiar el tipo de dato
+ Guardar la tabla en la capa curated(parquet)
