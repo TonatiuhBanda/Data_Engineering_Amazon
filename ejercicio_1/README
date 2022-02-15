@@ -14,7 +14,7 @@ Crear tabla products_standard_price con las siguientes columnas
  |-- country: string
  |-- app_sale_price_us: double
  
-Ejemplo de la tabla de salida en sample/products_standard_price.csv
+Ejemplo de la tabla de salida en output/products_standard_price.csv
 
 Descripción
  Amazon maneja distintas divisas dependiendo del país donde te encuentres,
